@@ -19,10 +19,10 @@
       </div> -->
 
       <br />
-      <app-progress-bar :quotesCount="quotesCount" />
+      <app-progress-bar :quotesCount="quotes.length" />
       <app-new-quote
         :quotes="quotes"
-        :quotesCount="quotesCount"
+        :quotesCount="quotes.length"
       ></app-new-quote>
       <div class="container">
         <app-info-bar>
@@ -36,7 +36,6 @@
           mode="edit"
         ></app-quote-list>
       </div>
-
       <br />
     </div>
     <br />
@@ -86,18 +85,6 @@ export default {
   },
   methods: {
     quotesCount(number) {},
-  },
-  computed: {
-    quotesCount() {
-      return this.quotes.length;
-    },
-  },
-  watch: {
-    // quotesCount() {
-    //   if (this.quotesCount >= 10) {
-    //     alert();
-    //   }
-    // },
   },
   data() {
     return {

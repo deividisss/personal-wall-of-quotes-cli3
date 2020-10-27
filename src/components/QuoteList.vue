@@ -35,3 +35,10 @@ console.log("Hello from JS!");
   },
 };
 </script>
+
+<style>
+/* .row{
+font-family: 'Arizonia', cursive;
+} */
+
+</style>
